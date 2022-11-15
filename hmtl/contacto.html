@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand&display=swap" rel="stylesheet"> 
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/hmtl/sobre.html">Sobre nosotros</a></li>
+                <li><a href="/hmtl/proyectos.html">Proyectos</a></li>
+                <li><a href="/hmtl/novedades.html">Novedades</a></li>
+                <li><a href="/hmtl/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mcontacto">
+        <section class="parrafoContacto">
+            <h2>Ante cualquier duda o consulta no dudes en contactarnos.</h2>
+        </section> 
+        <section class="form">
+            <form action="">
+                <fieldset>
+                    <legend>Contacto</legend>
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" name="apellido">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="mail">Correo electrónico:</label>
+                            <input type="email" name="mail" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="asociado">Categoría de socio:</label>
+                            <select name="asociado" id="">
+                                <option value="act">Activo</option>
+                                <option value="vit">Vitalicio</option>
+                                <option value="cad">Cadete</option>
+                                <option value="inf">Infantil</option>
+                                <option value="nosocio">No soy socie</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="mensaje">Escribe el mensaje:</label><br>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="terminos">Acepto términos y condiciones.</label>
+                            <input type="checkbox" name="terminos">
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Resetear">
+                        </div>
+                        <section>
+                    </fieldset>
+            </form>
+        </section>
+        <aside class="datosContacto">
+            <div>
+                <img class="tel" src="../img/tel.png" alt="logo contacto">
+                <p>bibliotecaleonidasbarletta@gmail.com</p>
+                <p>Teléfono: (+54 11) 4922-6984 - Muñiz 1689 - Buenos Aires Argentina</p>
+                <p>Horario de atención: lunes a sábados de 15 a 19 hs.</p>
+            </div>
+            <div class="redesContacto">
+                <a href="https://facebook.com/archivocasla" target="_blank"><img class="fb" src="../img/fb.png" alt="Facebook"></a>
+                <a href="https://instagram.com/archivocasla" target="_blank"><img class="in" src="../img/inst.png" alt="Instagram"></a>
+                <a href="https://twitter.com/archivocasla" target="_blank"><img class="tw" src="../img/tw.png" alt="Twitter"></a>
+            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8452884581106!2d-58.42623108511191!3d-34.63334976657284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbac134c96ab%3A0x54b2c74aa84b0132!2sMu%C3%B1iz%201689%2C%20C1424%20CABA!5e0!3m2!1ses!2sar!4v1667180949322!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </aside>
+    </main>
+    <footer>
+        <h6>
+            ©Biblioteca Popular Sanlorencista "Leónidas Barletta"
+        </h6>
+        <h6>
+            Ignacio Bruno
+        </h6>
+    </footer>
+</body>
+</html>
