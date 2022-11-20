@@ -5,7 +5,6 @@
 }
 
 header {
-    display:flex;
     justify-content:space-evenly;
     align-items: center;
     flex-wrap: wrap;
@@ -23,16 +22,16 @@ body {
 }
 
 main {
-    background-color: #6d6d6d;
     margin: 5px 50px 5px 50px;
     padding: 5px 5px 5px 5px;
-    border-style: solid; /* Borde sólido */
     border-radius: 5px; /* Tamaño de esquinas */
     border-color: rgb(255, 255, 255); /* Color de borde */
 }
 
 footer {
     background-color: #bf1b27; /* Color de fondo del footer */
+    width: auto;
+    height: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,44 +51,10 @@ ol {
     list-style-type:decimal;
 }
 
-/* Menú de navegación */
-nav {
-    background-color: #ffffff; /* Color de fondo del nav */
-}
-
-ul {
-    padding: 5px;
-    list-style-type: none; 
-    font-family: 'Nunito', sans-serif;
-    padding: 3px 10px 3px 10px;
-    margin: 0px 415px 0px 415px;
-}
-
-ul li {
-    display: inline-block;
-    padding: 10px;
-    margin: 1px;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 0px;
-}
-
-ul li a {
-    color: #000000;
-    text-decoration: none;
-}
-
-ul li:hover {
-    text-decoration: underline #263d54;
-}
-
-
 /*Inicio*/
 .minicio {
-    background-color: #6d6d6d;
     margin: 5px 50px 5px 50px;
-    padding: 125px 5px 125px 5px;
-    border-style: solid; /* Borde sólido */
+    padding: 95px 5px 125px 5px;
     border-radius: 5px; /* Tamaño de esquinas */
     border-color: rgb(255, 255, 255); /* Color de borde */
 }
@@ -170,7 +135,7 @@ ul li:hover {
     padding: 5px 0 15px 0; 
 }
 
-.vision { 
+.caja { 
     grid-area: vision; 
     width: 95%;
     height: auto;
@@ -398,8 +363,10 @@ ul li:hover {
 .vermas {
     background-color:transparent;
     border-style: none;
+    border-radius: 5px;
     color: #bf1b27;
     margin:0 0 0 1.5rem;
+    padding:0 0 0 0.4rem;
 }
 
 .vermas:hover {
@@ -508,4 +475,24 @@ img{
 }
 
 
+/*Clases para bootstrap*/
+.fondoazul {
+    background-color: #263d54;
+    color: white;
+}
+
+.fondorojo {
+    background-color: #bf1b27;
+    color: white;
+}
+
+.fondoblanco {
+    background-color: white;
+    color:#000000;
+}
+
+.fondogris {
+    background-color: #6d6d6d;
+    color: white;
+}
 

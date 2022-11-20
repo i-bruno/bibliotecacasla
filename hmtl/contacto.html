@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,23 +13,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand&display=swap" rel="stylesheet"> 
     <title>Contacto</title>
 </head>
-<body>
+<body class="fondorojo">
     <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sobre.html">Sobre nosotros</a></li>
-                <li><a href="./proyectos.html">Proyectos</a></li>
-                <li><a href="./novedades.html">Novedades</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
+                        <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="./catalogo.html">Catálogo</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="./repositorio.html">Repositorio</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="./indicepolitico.html">Índice Político</a>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
     </header>
-    <main class="mcontacto">
+    <main class="mcontacto fondorojo">
         <section class="parrafoContacto">
             <h2>Ante cualquier duda o consulta no dudes en contactarnos.</h2>
         </section> 
-        <section class="form">
+        <section class="form fondoblanco">
             <form action="">
                 <fieldset>
                     <legend>Contacto</legend>
@@ -89,7 +119,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8452884581106!2d-58.42623108511191!3d-34.63334976657284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbac134c96ab%3A0x54b2c74aa84b0132!2sMu%C3%B1iz%201689%2C%20C1424%20CABA!5e0!3m2!1ses!2sar!4v1667180949322!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </aside>
     </main>
-    <footer>
+    <footer class="fondoazul">
         <h6>
             ©Biblioteca Popular Sanlorencista "Leónidas Barletta"
         </h6>
@@ -97,5 +127,7 @@
             Ignacio Bruno
         </h6>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
