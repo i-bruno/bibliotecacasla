@@ -384,15 +384,6 @@ ol {
     border-color: #263d54;
 }
 
-.mnovedades {
-    background-color: #6d6d6d;
-    margin: 5px 50px 5px 50px;
-    padding: 5px 125px 5px 125px;
-    border-style: solid; /* Borde sólido */
-    border-radius: 5px; /* Tamaño de esquinas */
-    border-color: rgb(255, 255, 255); /* Color de borde */
-}
-
 /*Contacto*/
 .mcontacto {
     position:relative;
@@ -456,7 +447,7 @@ img{
 }
 
 .datosContacto {
-    width: 50%;
+    width: 100%;
     height: auto;
     text-align: center;
     padding: 5px;

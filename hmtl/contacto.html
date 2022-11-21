@@ -56,68 +56,198 @@
     <main class="mcontacto fondorojo">
         <section class="parrafoContacto">
             <h2>Ante cualquier duda o consulta no dudes en contactarnos.</h2>
-        </section> 
-        <section class="form fondoblanco">
-            <form action="">
-                <fieldset>
-                    <legend>Contacto</legend>
-                        <div>
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" name="nombre">
-                        </div>
-                        <br>
-                        <div>
-                            <label for="apellido">Apellido:</label>
-                            <input type="text" name="apellido">
-                        </div>
-                        <br>
-                        <div>
-                            <label for="mail">Correo electrónico:</label>
-                            <input type="email" name="mail" required>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="asociado">Categoría de socio:</label>
-                            <select name="asociado" id="">
-                                <option value="act">Activo</option>
-                                <option value="vit">Vitalicio</option>
-                                <option value="cad">Cadete</option>
-                                <option value="inf">Infantil</option>
-                                <option value="nosocio">No soy socie</option>
-                            </select>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="mensaje">Escribe el mensaje:</label><br>
-                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="terminos">Acepto términos y condiciones.</label>
-                            <input type="checkbox" name="terminos">
-                        </div>
-                        <div>
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Resetear">
-                        </div>
-                        <section>
-                    </fieldset>
-            </form>
         </section>
-        <aside class="datosContacto">
-            <div>
-                <img class="tel" src="../img/tel.png" alt="logo contacto">
-                <p>bibliotecaleonidasbarletta@gmail.com</p>
-                <p>Teléfono: (+54 11) 4922-6984 - Muñiz 1689 - Buenos Aires Argentina</p>
-                <p>Horario de atención: lunes a sábados de 15 a 19 hs.</p>
+    
+    <div class="container border border-2 rounded ">
+        <div class="row">
+            <div class="col-md-6">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="validationDefault01" class="form-label">
+                            Nombre
+                        </label>
+                        <input type="text" class="form-control" id="validationDefault01" value="" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="validationDefault02" class="form-label">
+                            Apellido
+                        </label>
+                        <input type="text" class="form-control" id="validationDefault02" value="" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="validationDefaultUsername" class="form-label">
+                            Correo electrónico
+                        </label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2">
+                                @
+                            </span>
+                            <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="validationDefault03" class="form-label">
+                            Ciudad
+                        </label>
+                        <input type="text" class="form-control" id="validationDefault03" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="validationDefault04" class="form-label">
+                            Provincia
+                        </label>
+                        <select class="form-select" id="validationDefault04" required>
+                        <option selected disabled value="">
+                        </option>
+                        <option>
+                            CABA
+                        </option>
+                        <option>
+                            Provincia de Buenos Aires
+                        </option>
+                        <option>
+                            Catamarca
+                        </option>
+                        <option>
+                            Chaco
+                        </option>
+                        <option>
+                            Chubut
+                        </option>
+                        <option>
+                            Córdoba
+                        </option>
+                        <option>
+                            Corrientes
+                        </option>
+                        <option>
+                            Entre Ríos
+                        </option>
+                        <option>
+                            Formosa
+                        </option>
+                        <option>
+                            Jujuy
+                        </option>
+                        <option>
+                            La Pampa
+                        </option>
+                        <option>
+                            La Rioja
+                        </option>
+                        <option>
+                            Misiones
+                        </option>
+                        <option>
+                            Salta
+                        </option>
+                        <option>
+                            San Juan
+                        </option>
+                        <option>
+                            San Luis
+                        </option>
+                        <option>
+                            Santa Cruz
+                        </option>
+                        <option>
+                            Santa fe
+                        </option>
+                        <option>
+                            Santiago del Estero
+                        </option>
+                        <option>
+                            Tierra del Fuego
+                        </option>
+                        <option>
+                            Tucumán
+                        </option>         
+                        <option class="fondogris">
+                            Exterior
+                        </option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="validationDefault04" class="form-label">
+                            Categoría de Socio
+                        </label>
+                        <select class="form-select" id="validationDefault04" required>
+                        <option selected disabled value="">                            
+                        </option>
+                        <option>
+                            Activo
+                        </option>
+                        <option>
+                            Vitalicio
+                        </option>
+                        <option>
+                            Cadete
+                        </option>
+                        <option>
+                            Infantil
+                        </option>
+                        <option>
+                            Interior
+                        </option>
+                        <option>
+                            Exterior
+                        </option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="validationDefault05" class="form-label">
+                            Escribe el mensaje
+                        </label>
+                        <textarea name="mensaje" id="mensaje" rows="10" required>
+                        </textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Acepto <a href="#">términos y condiciones</a>  
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn fondoazul" type="submit">Enviar</button>
+                        <button class="btn fondoazul" type="reset">Borrar</button>
+                    </div>
+                </form>
             </div>
-            <div class="redesContacto">
-                <a href="https://facebook.com/archivocasla" target="_blank"><img class="fb" src="../img/fb.png" alt="Facebook"></a>
-                <a href="https://instagram.com/archivocasla" target="_blank"><img class="in" src="../img/inst.png" alt="Instagram"></a>
-                <a href="https://twitter.com/archivocasla" target="_blank"><img class="tw" src="../img/tw.png" alt="Twitter"></a>
+
+            <div class="col-sm-12 col-md-6">
+                <aside class="datosContacto">
+                    <div>
+                        <img class="tel" src="../img/tel.png" alt="logo contacto">
+                        <p>
+                            bibliotecaleonidasbarletta@gmail.com
+                        </p>
+                        <p>
+                            Teléfono: (+54 11) 4922-6984 - Muñiz 1689 - Buenos Aires Argentina
+                        </p>
+                        <p>
+                            Horario de atención: lunes a sábados de 15 a 19 hs.
+                        </p>
+                    </div>
+                    <div class="redesContacto">
+                        <a href="https://facebook.com/archivocasla" target="_blank"><img class="fb" src="../img/fb.png" alt="Facebook"></a>
+                        <a href="https://instagram.com/archivocasla" target="_blank"><img class="in" src="../img/inst.png" alt="Instagram"></a>
+                        <a href="https://twitter.com/archivocasla" target="_blank"><img class="tw" src="../img/tw.png" alt="Twitter"></a>
+                    </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8452884581106!2d-58.42623108511191!3d-34.63334976657284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbac134c96ab%3A0x54b2c74aa84b0132!2sMu%C3%B1iz%201689%2C%20C1424%20CABA!5e0!3m2!1ses!2sar!4v1667180949322!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </aside>
             </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8452884581106!2d-58.42623108511191!3d-34.63334976657284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbac134c96ab%3A0x54b2c74aa84b0132!2sMu%C3%B1iz%201689%2C%20C1424%20CABA!5e0!3m2!1ses!2sar!4v1667180949322!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </aside>
+        </div>
+    </div>
+
     </main>
     <footer class="fondoazul">
         <h6>
