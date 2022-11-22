@@ -22,7 +22,7 @@ body {
 }
 
 main {
-    margin: 5px 50px 5px 50px;
+    margin: 5px 25px 5px 25px;
     padding: 5px 5px 5px 5px;
     border-radius: 5px; /* Tamaño de esquinas */
     border-color: rgb(255, 255, 255); /* Color de borde */
