@@ -79,20 +79,6 @@ ol {
     padding: 15px 15px 15px 15px;
 }
 
-.objetivos { 
-    grid-area: objetivos; 
-    width: 100%;
-    height: auto;
-    margin: 1px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-    border-style: solid;
-    border-color: #263d54;
-    border-radius: 10px;
-    border-width: 10px;
-    background-color: #ffffff;
-    display: inline-block;
-}
-
 .listaobjetivos { 
     grid-area: listaobjetivos;
     width: 100%;

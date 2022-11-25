@@ -36,6 +36,41 @@ main .redes {
     margin: 5px 5px 5px 5px; }
 
 /*Sobre*/
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "titulo titulo titulo titulo titulo titulo" "vision vision vision imagen imagen imagen" "vision vision vision imagen imagen imagen" "vision vision vision imagen imagen imagen" "objetivos objetivos objetivos objetivos objetivos objetivos" "tituloComision tituloComision tituloComision tituloComision tituloComision tituloComision" "cargos cargos cargos cargos cargos cargos" "cargos cargos cargos cargos cargos cargos"; }
+
+.titulo {
+  grid-area: titulo; }
+
+.vision {
+  grid-area: vision; }
+
+.imagen {
+  grid-area: imagen; }
+
+.cargos {
+  grid-area: cargos; }
+
+.tituloComision {
+  grid-area: tituloComision; }
+
+.objetivos {
+  grid-area: objetivos;
+  width: 100%;
+  height: auto;
+  margin: 1px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: #263d54;
+  border-radius: 10px;
+  border-width: 10px;
+  display: inline-block; }
+
 /*Novedades*/
 /*Proyectos - Catálogo*/
 /*Proyectos - Repositorio*/
