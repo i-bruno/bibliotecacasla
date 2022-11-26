@@ -19,7 +19,7 @@ main .contenedorLogo {
 
 main h6 {
   text-align: center;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   margin-bottom: 0;
   margin: 95px 5px 5px 5px; }
 
@@ -37,12 +37,14 @@ main .redes {
 
 /*Sobre*/
 .sobre {
+  margin: 10px;
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "titulo titulo titulo titulo titulo titulo" "vision vision vision imagen imagen imagen" "vision vision vision imagen imagen imagen" "vision vision vision imagen imagen imagen" "objetivos objetivos objetivos objetivos objetivos objetivos" "tituloComision tituloComision tituloComision tituloComision tituloComision tituloComision" "cargos cargos cargos cargos cargos cargos" "cargos cargos cargos cargos cargos cargos"; }
+  grid-template-areas: "titulo titulo titulo titulo titulo titulo" "vision vision vision imagen imagen imagen" "objetivos objetivos objetivos objetivos objetivos objetivos" "tituloComision tituloComision tituloComision tituloComision tituloComision tituloComision" "cargos cargos cargos cargos cargos cargos"; }
 
 .titulo {
   grid-area: titulo; }
@@ -51,24 +53,29 @@ main .redes {
   grid-area: vision; }
 
 .imagen {
-  grid-area: imagen; }
+  grid-area: imagen;
+  display: inline-flex;
+  justify-content: space-evenly; }
 
 .cargos {
-  grid-area: cargos; }
+  grid-area: cargos;
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
 
 .tituloComision {
   grid-area: tituloComision; }
 
 .objetivos {
   grid-area: objetivos;
-  width: 100%;
+  width: 99%;
   height: auto;
-  margin: 1px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
   padding: 5px 5px 5px 5px;
   border-style: solid;
   border-color: #263d54;
   border-radius: 10px;
-  border-width: 10px;
+  border-width: 2px;
   display: inline-block; }
 
 /*Novedades*/
