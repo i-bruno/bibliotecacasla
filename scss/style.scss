@@ -7,6 +7,54 @@
     box-sizing: border-box;
 }
 
+header {
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;    
+    background-color: #ffffff;
+    width: auto;
+    height: auto;
+}
+
+body {
+    background-color: $azul;
+    width: auto;
+    height: auto;
+
+}
+
+main {
+    margin: 5px 50px 5px 50px;
+    padding: 5px 5px 125px 5px;
+    border-radius: 5px; /* Tamaño de esquinas */
+}
+
+footer {
+    background-color: $rojo; /* Color de fondo del footer */
+    width: auto;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-family: $nunito;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: $quick;
+    margin: 5px 5px 5px 20px;
+    line-height: 1.5; /* Interlineado */
+    text-align: justify;
+}
+
+ol {
+    font-family: $quick;
+    list-style-type:decimal;
+}
+
+
 // Main Inicio
 /*Main inicio*/
 
@@ -80,6 +128,11 @@ main {
     grid-area: imagen; 
     display:inline-flex;
     justify-content: space-evenly;
+    img{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
 }
 
 .cargos { 
@@ -102,24 +155,198 @@ main {
     border-style: solid;
     border-color: $azul;
     border-radius: 10px;
-    border-width: 2px;
-    display: inline-block; 
+    border-width: 3px;
+    display: inline-block;
+    ol {
+        margin: 5px 5px 5px 10px;
+        line-height: 1.5; /* Interlineado */
+        text-align: justify; 
+    }
 }
 
 
 
 /*Novedades*/
 // Novedades
+.vermas {
+    background-color:transparent;
+    border-style: none;
+    border-radius: 5px;
+    color: $rojo;
+    margin:0 0 0 1.5rem;
+    padding:0 0 0 0.4rem;
+}
+
+.vermas:hover {
+    cursor:pointer;
+}
+.post {
+    width: 300px;
+    height: auto;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    display:inline-block;
+    background-color: white;
+    border-radius: 0.5rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $azul;
+}
+
+// Proyectos
+/*Proyectos*/
+.proyectos {
+    width: 100%;
+    height: auto;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+.proyectos p {
+    text-align: center;
+}
+
+.logoproy {
+    width: auto;
+    height: 200px;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.logoproy:hover {
+    opacity: 25%;
+}
 
     /*Proyectos - Catálogo*/
     //Proyectos - Catálogo
+    .catalogo{
+        width: 200px;
+        height: auto;
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        display:inline-block;
+    }
 
     /*Proyectos - Repositorio*/
     //Proyectos - Repositorio 
+    .repo{
+        width: 200px;
+        height: auto;
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        display:inline-block;
+    }
 
     /*Proyectos - Índice Político*/
-    //Proyectos - Índice Político 
+    //Proyectos - Índice Político
+    .indice{
+        width: 200px;
+        height: auto;
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    } 
 
 /*Contacto*/
 // Contacto
+.mcontacto {
+    position:relative;
+}
+/* Formulario de contacto */
+form {
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+label {
+    font-family: $nunito;
+    padding: 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+textarea {
+    width: 95%;
+    margin: 0px 0px 0px 10px;
+}
+
+legend {
+    font-family: $nunito;
+}
+
+img{
+    width: auto;
+    height: 200px;
+}
+
+.form {
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: $azul;
+}
+
+.form input{
+    padding: 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+/* Fin formulario de contacto */
+
+/*Datos de Contacto - Aside*/
+.tel {
+    width: auto;
+    height: 50px;
+    padding: 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.redesContacto {
+    padding: 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.datosContacto {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+    margin: 5px 5px 5px 5px;
+    display: inline-block;
+}
+
+.datosContacto div {
+    width: 100%;
+    height: auto;
+}
+
+.datosContacto div p {
+    text-align: center;
+}
+
+
+/*Clases para bootstrap*/
+.fondoazul {
+    background-color: $azul;
+    color: white;
+}
+
+.fondorojo {
+    background-color: $rojo;
+    color: white;
+}
+
+.fondoblanco {
+    background-color: white;
+    color:#000000;
+}
+
+.fondogris {
+    background-color: #6d6d6d;
+    color: white;
+}
 
