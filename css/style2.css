@@ -86,7 +86,11 @@ main .redes {
   grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "titulo titulo titulo titulo titulo titulo" "vision vision vision imagen imagen imagen" "objetivos objetivos objetivos objetivos objetivos objetivos" "tituloComision tituloComision tituloComision tituloComision tituloComision tituloComision" "cargos cargos cargos cargos cargos cargos"; }
+  grid-template-areas: "titulo titulo titulo titulo titulo titulo"
+ "vision vision vision imagen imagen imagen"
+ "objetivos objetivos objetivos objetivos objetivos objetivos"
+ "tituloComision tituloComision tituloComision tituloComision tituloComision tituloComision"
+ "cargos cargos cargos cargos cargos cargos"; }
 
 .titulo {
   grid-area: titulo; }
