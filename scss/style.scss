@@ -25,9 +25,10 @@ body {
 }
 
 main {
-    margin: 5px 50px 5px 50px;
-    padding: 5px 5px 125px 5px;
+    margin: 5px 50px 5px 15px;
+    padding: 5px 5px 5px 5px;
     border-radius: 5px; /* Tamaño de esquinas */
+    height: 1700px;
 }
 
 footer {
@@ -101,7 +102,7 @@ main {
 // Sobre
 
 .sobre {
-    margin: 10px;
+    padding: 5px 5px 5px 5px;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
