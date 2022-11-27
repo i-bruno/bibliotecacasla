@@ -28,12 +28,6 @@ main {
     margin: 5px 50px 5px 15px;
     padding: 5px 5px 5px 5px;
     border-radius: 5px; /* Tamaño de esquinas */
-    height: 1700px;
-}
-
-footer {
-    background-color: $rojo; /* Color de fondo del footer */
-    width: auto;
     height: 100%;
 }
 
@@ -55,6 +49,11 @@ ol {
     list-style-type:decimal;
 }
 
+footer {
+    background-color: $rojo; /* Color de fondo del footer */
+    width: auto;
+    height: 100%;
+}
 
 // Main Inicio
 /*Main inicio*/
@@ -62,7 +61,7 @@ ol {
 main {
     .contenedorLogo{
         width: 100%;
-        height: 210px;
+        height: 310px;
         text-align: center;
         padding: 5px 5px 5px 5px;
         margin: 5px 5px 5px 5px;
@@ -176,11 +175,11 @@ main {
     color: $rojo;
     margin:0 0 0 1.5rem;
     padding:0 0 0 0.4rem;
+    &:hover{
+        cursor:pointer;
+    }
 }
 
-.vermas:hover {
-    cursor:pointer;
-}
 .post {
     width: 300px;
     height: auto;
@@ -202,10 +201,9 @@ main {
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     text-align: center;
-}
-
-.proyectos p {
-    text-align: center;
+    p {
+        text-align: center;
+    }
 }
 
 .logoproy {
@@ -213,10 +211,9 @@ main {
     height: 200px;
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-}
-
-.logoproy:hover {
-    opacity: 25%;
+    &:hover{
+        opacity: 25%;
+    }
 }
 
     /*Proyectos - Catálogo*/
@@ -289,11 +286,10 @@ img{
     border-style: solid;
     border-radius: 10px;
     border-color: $azul;
-}
-
-.form input{
-    padding: 5px;
-    margin: 5px 5px 5px 5px;
+    input{
+        padding: 5px;
+        margin: 5px 5px 5px 5px;
+    }
 }
 
 /* Fin formulario de contacto */
@@ -318,17 +314,14 @@ img{
     padding: 5px;
     margin: 5px 5px 5px 5px;
     display: inline-block;
+    div {
+        width: 100%;
+        height: auto;
+        p {
+            text-align: center;
+        }
+    }
 }
-
-.datosContacto div {
-    width: 100%;
-    height: auto;
-}
-
-.datosContacto div p {
-    text-align: center;
-}
-
 
 /*Clases para bootstrap*/
 .fondoazul {
