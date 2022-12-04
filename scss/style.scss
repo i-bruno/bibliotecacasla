@@ -1,5 +1,11 @@
 @import "./variables";
-
+@import "../scss/inicio";
+@import "../scss/sobre";
+@import "../scss/novedades";
+@import "../scss/catalogo";
+@import "../scss/repositorio";
+@import "../scss/indice";
+@import "../scss/contacto";
 
 *{
     margin:0;
@@ -25,7 +31,7 @@ body {
 }
 
 main {
-    margin: 5px 50px 5px 15px;
+    margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     border-radius: 5px; /* Tamaño de esquinas */
     height: 100%;
@@ -49,279 +55,14 @@ ol {
     list-style-type:decimal;
 }
 
+li {
+    font-family: $quick;
+}
+
 footer {
     background-color: $rojo; /* Color de fondo del footer */
     width: auto;
     height: 100%;
-}
-
-// Main Inicio
-/*Main inicio*/
-
-main {
-    margin: 66px 0 66px 0;
-    .contenedorLogo{
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        padding: 5px 5px 5px 5px;
-        margin: 5px 5px 5px 5px;
-
-        img{
-            width: auto;
-            height: 200px;
-            padding: 5px;
-            margin: 95px 5px 5px 5px;
-        }
-    }
-
-    h6 {
-        text-align: center;
-        font-family: $nunito;
-        margin-bottom: 0;
-        margin: 5px 5px 5px 5px;
-    }
-
-    .redes{
-        width: 100%;
-        height: auto;
-        padding: 5px 5px 5px 5px;
-        margin: 5px 5px 5px 5px;
-        text-align: center;
-
-        img{
-            width: auto;
-            height: 40px;
-            padding: 5px;
-            margin: 5px 5px 5px 5px;    
-        }
-    }
-}
-
-/*Sobre*/
-// Sobre
-
-.sobre {
-    padding: 5px 5px 5px 5px;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "titulo titulo titulo titulo titulo titulo"
-        "vision vision vision imagen imagen imagen"
-        "objetivos objetivos objetivos objetivos objetivos objetivos"
-        "tituloComision tituloComision tituloComision tituloComision tituloComision tituloComision"
-        "cargos cargos cargos cargos cargos cargos";
-}
-
-.titulo { 
-    grid-area: titulo; 
-}
-
-.vision { 
-    grid-area: vision; 
-}
-
-.imagen { 
-    grid-area: imagen; 
-    display:inline-flex;
-    justify-content: space-evenly;
-    img{
-        width: 100%;
-        height: auto;
-        padding: 10px;
-    }
-}
-
-.cargos { 
-    grid-area: cargos;
-    display:inline-flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.tituloComision { 
-    grid-area: tituloComision; 
-}
-
-.objetivos { 
-    grid-area: objetivos;
-    width: 99%;
-    height: auto;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-    border-style: solid;
-    border-color: $azul;
-    border-radius: 10px;
-    border-width: 3px;
-    display: inline-block;
-    ol {
-        margin: 5px 5px 5px 10px;
-        line-height: 1.5; /* Interlineado */
-        text-align: justify; 
-    }
-}
-
-
-
-/*Novedades*/
-// Novedades
-.vermas {
-    background-color:transparent;
-    border-style: none;
-    border-radius: 5px;
-    color: $rojo;
-    margin:0 0 0 1.5rem;
-    padding:0 0 0 0.4rem;
-    &:hover{
-        cursor:pointer;
-    }
-}
-
-.post {
-    width: 300px;
-    height: auto;
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    display:inline-block;
-    background-color: white;
-    border-radius: 0.5rem;
-    border-width: 2px;
-    border-style: solid;
-    border-color: $azul;
-}
-
-// Proyectos
-/*Proyectos*/
-.proyectos {
-    width: 100%;
-    height: auto;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-    text-align: center;
-    p {
-        text-align: center;
-    }
-}
-
-.logoproy {
-    width: auto;
-    height: 200px;
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    &:hover{
-        opacity: 25%;
-    }
-}
-
-    /*Proyectos - Catálogo*/
-    //Proyectos - Catálogo
-    .catalogo{
-        width: 200px;
-        height: auto;
-        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-        display:inline-block;
-    }
-
-    /*Proyectos - Repositorio*/
-    //Proyectos - Repositorio 
-    .repo{
-        width: 200px;
-        height: auto;
-        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-        display:inline-block;
-    }
-
-    /*Proyectos - Índice Político*/
-    //Proyectos - Índice Político
-    .indice{
-        width: 200px;
-        height: auto;
-        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    } 
-
-/*Contacto*/
-// Contacto
-.mcontacto {
-    position:relative;
-}
-/* Formulario de contacto */
-form {
-    padding: 5px 5px 5px 5px;
-    margin: 5px 5px 5px 5px;
-}
-
-label {
-    font-family: $nunito;
-    padding: 5px;
-    margin: 5px 5px 5px 5px;
-}
-
-textarea {
-    width: 95%;
-    margin: 0px 0px 0px 10px;
-}
-
-legend {
-    font-family: $nunito;
-}
-
-img{
-    width: auto;
-    height: 200px;
-}
-
-.form {
-    width: 40%;
-    height: auto;
-    display: inline-block;
-    padding: 5px 5px 5px 5px;
-    margin: 5px 5px 5px 5px;
-    background-color: #ffffff;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: $azul;
-    input{
-        padding: 5px;
-        margin: 5px 5px 5px 5px;
-    }
-}
-
-/* Fin formulario de contacto */
-
-/*Datos de Contacto - Aside*/
-.tel {
-    width: auto;
-    height: 50px;
-    padding: 5px;
-    margin: 5px 5px 5px 5px;
-}
-
-.redesContacto {
-    padding: 5px;
-    margin: 5px 5px 5px 5px;
-}
-
-.datosContacto {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding: 5px;
-    margin: 5px 5px 5px 5px;
-    display: inline-block;
-    div {
-        width: 100%;
-        height: auto;
-        p {
-            text-align: center;
-        }
-    }
 }
 
 /*Clases para bootstrap*/
@@ -344,4 +85,3 @@ img{
     background-color: #6d6d6d;
     color: white;
 }
-

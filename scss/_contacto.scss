@@ -1,0 +1,77 @@
+/*Contacto*/
+// Contacto
+.mcontacto {
+    position:relative;
+}
+/* Formulario de contacto */
+form {
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+label {
+    font-family: $nunito;
+    padding: 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+textarea {
+    width: 95%;
+    margin: 0px 0px 0px 10px;
+}
+
+legend {
+    font-family: $nunito;
+}
+
+img{
+    width: auto;
+    height: 200px;
+}
+
+.form {
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: $azul;
+    input{
+        padding: 5px;
+        margin: 5px 5px 5px 5px;
+    }
+}
+
+/* Fin formulario de contacto */
+
+/*Datos de Contacto - Aside*/
+.tel {
+    width: auto;
+    height: 50px;
+    padding: 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.redesContacto {
+    padding: 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.datosContacto {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+    margin: 5px 5px 5px 5px;
+    display: inline-block;
+    div {
+        width: 100%;
+        height: auto;
+        p {
+            text-align: center;
+        }
+    }
+}
