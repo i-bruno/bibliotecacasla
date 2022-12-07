@@ -135,6 +135,8 @@ main .redes {
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   display: inline-block; }
+  .catalogo img:hover {
+    opacity: 50%; }
 
 /*Proyectos - Repositorio*/
 .omeka {
@@ -147,6 +149,8 @@ main .redes {
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   display: inline-block; }
+  .repo img:hover {
+    opacity: 50%; }
 
 /*Proyectos - Índice Político*/
 .tematres {
@@ -158,6 +162,8 @@ main .redes {
   height: auto;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem; }
+  .indice img:hover {
+    opacity: 50%; }
 
 /*Contacto*/
 .mcontacto {
