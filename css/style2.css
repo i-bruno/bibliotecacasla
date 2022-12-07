@@ -125,11 +125,17 @@ main .redes {
   border-color: #263d54; }
 
 /*Proyectos - Catálogo*/
-div {
-  display: flex;
-  flex-wrap: wrap; }
+@media only screen and (min-width: 1200px) {
+  .koha {
+    height: 200px;
+    width: 250px; } }
 
 @media only screen and (max-width: 1200px) {
+  .koha {
+    height: 200px;
+    width: 250px; } }
+
+@media only screen and (min-width: 991px) {
   .koha {
     height: 150px;
     width: 200px; } }
@@ -154,10 +160,6 @@ div {
     opacity: 50%; }
 
 /*Proyectos - Repositorio*/
-div {
-  display: flex;
-  flex-wrap: wrap; }
-
 @media only screen and (max-width: 991px) {
   .omeka {
     height: 155px;
@@ -178,10 +180,6 @@ div {
     opacity: 50%; }
 
 /*Proyectos - Índice Político*/
-div {
-  display: flex;
-  flex-wrap: wrap; }
-
 @media only screen and (max-width: 991px) {
   .tematres {
     height: 155px;
