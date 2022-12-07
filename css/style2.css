@@ -6,17 +6,16 @@ main .contenedorLogo {
   text-align: center;
   padding: 5px 5px 5px 5px;
   margin: 5px 5px 5px 5px; }
+  main .contenedorLogo h6 {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 0;
+    margin: 5px 5px 5px 5px; }
   main .contenedorLogo img {
     width: auto;
     height: 200px;
     padding: 5px;
     margin: 95px 5px 5px 5px; }
-
-main h6 {
-  text-align: center;
-  font-family: "Nunito", sans-serif;
-  margin-bottom: 0;
-  margin: 5px 5px 5px 5px; }
 
 main .redes {
   width: 100%;
@@ -31,7 +30,11 @@ main .redes {
     margin: 5px 5px 5px 5px; }
 
 .finicio {
-  margin: 142px 0 0 0; }
+  margin: 100px 0 0 0; }
+
+@media only screen and (min-width: 576px) {
+  .finicio {
+    margin: 142px 0 0 0; } }
 
 /*Sobre*/
 .sobre {
