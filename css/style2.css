@@ -125,12 +125,27 @@ main .redes {
   border-color: #263d54; }
 
 /*Proyectos - Catálogo*/
-.koha {
-  height: auto;
-  width: 200px; }
+div {
+  display: flex;
+  flex-wrap: wrap; }
+
+@media only screen and (max-width: 1200px) {
+  .koha {
+    height: 150px;
+    width: 200px; } }
+
+@media only screen and (max-width: 991px) {
+  .koha {
+    height: 150px;
+    width: 150px; } }
+
+@media only screen and (max-width: 767px) {
+  .koha {
+    height: 150px;
+    width: 200px; } }
 
 .catalogo {
-  width: 200px;
+  width: 230px;
   height: auto;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -139,9 +154,19 @@ main .redes {
     opacity: 50%; }
 
 /*Proyectos - Repositorio*/
-.omeka {
-  height: auto;
-  width: 200px; }
+div {
+  display: flex;
+  flex-wrap: wrap; }
+
+@media only screen and (max-width: 991px) {
+  .omeka {
+    height: 155px;
+    width: 155px; } }
+
+@media only screen and (max-width: 767px) {
+  .omeka {
+    height: 200px;
+    width: 200px; } }
 
 .repo {
   width: 230px;
@@ -153,9 +178,19 @@ main .redes {
     opacity: 50%; }
 
 /*Proyectos - Índice Político*/
-.tematres {
-  height: auto;
-  width: 230px; }
+div {
+  display: flex;
+  flex-wrap: wrap; }
+
+@media only screen and (max-width: 991px) {
+  .tematres {
+    height: 155px;
+    width: 155px; } }
+
+@media only screen and (max-width: 767px) {
+  .tematres {
+    height: 200px;
+    width: 200px; } }
 
 .indice {
   width: 230px;

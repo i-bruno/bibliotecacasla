@@ -1,10 +1,23 @@
     /*Proyectos - Repositorio*/
     //Proyectos - Repositorio
-    
-    .omeka{
-        height: auto;
-        width: 200px;
-    }
+    div{
+        display:flex;
+        flex-wrap: wrap;
+}
+
+    @media only screen and (max-width:991px){
+        .omeka{
+            height: 155px;
+            width: 155px;
+        }
+}
+
+    @media only screen and (max-width:767px){
+        .omeka{
+            height: 200px;
+            width: 200px;
+        }
+}
     
     .repo{
         width: 230px;
@@ -17,3 +30,5 @@
         }
     }
 
+
+        
