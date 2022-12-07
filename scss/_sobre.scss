@@ -1,5 +1,11 @@
 /*Sobre*/
 // Sobre
+
+@mixin tamanio ($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+}
+
 .sobre {
     position:relative;
     border-radius: 10px;
@@ -29,13 +35,12 @@
     display:inline-flex;
     justify-content: space-evenly;
     img{
+        @include tamanio(auto, auto);
         border-style: solid;
         border-color: $azul;
         border-radius: 10px;
         background-color: white;
         text-align: center;
-        width: auto;
-        height: auto;
         padding: 5px;
     }
 }

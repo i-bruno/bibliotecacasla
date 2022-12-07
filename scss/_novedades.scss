@@ -1,5 +1,10 @@
 /*Novedades*/
 // Novedades
+@mixin tamanio ($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+}
+
 .vermas {
     background-color:transparent;
     border-style: none;
@@ -13,8 +18,7 @@
 }
 
 .post {
-    width: 300px;
-    height: auto;
+    @include tamanio(300px, auto);
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     display:inline-block;

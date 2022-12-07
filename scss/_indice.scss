@@ -1,25 +1,25 @@
     /*Proyectos - Índice Político*/
     //Proyectos - Índice Político
 
-
+@mixin tamanio ($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+}
 
     @media only screen and (max-width:991px){
         .tematres{
-            height: 155px;
-            width: 155px;
+            @include tamanio(155px, 155px);
         }
 }
 
     @media only screen and (max-width:767px){
         .tematres{
-            height: 200px;
-            width: 200px;
+            @include tamanio(200px, 200px);
         }
 }
 
     .indice{
-        width: 230px;
-        height: auto;
+        @include tamanio(230px, auto);
         margin: 0.5rem 0.5rem 0.5rem 0.5rem;
         padding: 0.5rem 0.5rem 0.5rem 0.5rem;
         img:hover{

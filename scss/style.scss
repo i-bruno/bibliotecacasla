@@ -7,6 +7,11 @@
 @import "../scss/indice";
 @import "../scss/contacto";
 
+@mixin tamanio ($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+}
+
 *{
     margin:0;
     padding:0;
@@ -14,20 +19,17 @@
 }
 
 header {
+    @include tamanio(auto, auto);
     justify-content:space-evenly;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;    
     background-color: #ffffff;
-    width: auto;
-    height: auto;
 }
 
 body {
+    @include tamanio(auto, auto);
     background-color: $azul;
-    width: auto;
-    height: auto;
-
 }
 
 main {
@@ -60,9 +62,8 @@ li {
 }
 
 footer {
+    @include tamanio(auto, 100%);
     background-color: $rojo; /* Color de fondo del footer */
-    width: auto;
-    height: 100%;
 }
 
 /*Clases para bootstrap*/

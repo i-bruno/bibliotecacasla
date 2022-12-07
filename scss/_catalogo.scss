@@ -1,22 +1,26 @@
     /*Proyectos - Catálogo*/
     //Proyectos - Catálogo
 
+@mixin tamanio ($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+}
+
 @media only screen and (min-width:1200px){
     .koha{
-        height: 200px;
-        width: 250px;
+        @include tamanio(250px, 200px);
     }
 }
 
 @media only screen and (max-width:1200px){
     .koha{
-        height: 200px;
-        width: 250px;
+        @include tamanio(250px, 200px);
     }
 }
 
 @media only screen and (min-width:991px){
     .koha{
+        @include tamanio(200px, 150px);
         height: 150px;
         width: 200px;
     }
@@ -24,22 +28,19 @@
 
     @media only screen and (max-width:991px){
         .koha{
-            height: 150px;
-            width: 150px;
+            @include tamanio(150px, 150px);
         }
 }
 
     @media only screen and (max-width:767px){
         .koha{
-            height: 150px;
-            width: 200px;
+            @include tamanio(200px, 150px);
         }
 }
 
 
     .catalogo{
-        width: 230px;
-        height: auto;
+        @include tamanio(230px, auto);
         margin: 0.5rem 0.5rem 0.5rem 0.5rem;
         padding: 0.5rem 0.5rem 0.5rem 0.5rem;
         display:inline-block;

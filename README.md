@@ -3,6 +3,7 @@ Segunda pre entrega de proyecto final para el Curso de Desarrollo Web de CODERHO
 Se trabaja en el desarrollo de una página web institucional para la Biblioteca Popular Sanlorencista "Leónidas Barletta".
 
 #PreEntrega3-Bruno
+
 Se trabajo en el desarrollo de SASS, a su vez se establecieron mejor las características responsive. Por último se incorporaron textos evitando lo mejor posible la utilización de los Lorem.
 La web termina quedando con la siguiente estructura:
 

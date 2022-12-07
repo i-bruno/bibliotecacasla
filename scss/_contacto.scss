@@ -1,5 +1,11 @@
 /*Contacto*/
 // Contacto
+
+@mixin tamanio ($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+}
+
 .mcontacto {
     position:relative;
 }
@@ -25,13 +31,11 @@ legend {
 }
 
 img{
-    width: auto;
-    height: 200px;
+    @include tamanio(auto, 200px);
 }
 
 .form {
-    width: 40%;
-    height: auto;
+    @include tamanio(40%, auto);
     display: inline-block;
     padding: 5px 5px 5px 5px;
     margin: 5px 5px 5px 5px;
@@ -49,8 +53,7 @@ img{
 
 /*Datos de Contacto - Aside*/
 .tel {
-    width: auto;
-    height: 50px;
+    @include tamanio(auto, 50px);
     padding: 5px;
     margin: 5px 5px 5px 5px;
 }
@@ -61,15 +64,13 @@ img{
 }
 
 .datosContacto {
-    width: 100%;
-    height: auto;
+    @include tamanio(100%, auto);
     text-align: center;
     padding: 5px;
     margin: 5px 5px 5px 5px;
     display: inline-block;
     div {
-        width: 100%;
-        height: auto;
+        @include tamanio(100%, auto);
         p {
             text-align: center;
         }
