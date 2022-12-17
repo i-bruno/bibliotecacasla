@@ -21,10 +21,14 @@
     @include tamanio(300px, auto);
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    display:inline-block;
     background-color: white;
     border-radius: 0.5rem;
     border-width: 2px;
     border-style: solid;
     border-color: $azul;
+    display:inline-block;
+    .texto{
+        @include tamanio(auto, 150px);
+        overflow: hidden;
+    }
 }

@@ -66,6 +66,26 @@ footer {
     background-color: $rojo; /* Color de fondo del footer */
 }
 
+.navrojo:hover{
+    font-weight: bold;
+    a {
+        color: $rojo;
+    }
+    a:active{
+        background-color: white;
+    }
+}
+
+.navazul:hover{
+    font-weight: bold;
+    a {
+        color: $azul;
+    }
+    a:active{
+        background-color: white;
+    }
+}
+
 /*Clases para bootstrap*/
 .fondoazul {
     background-color: $azul;
@@ -83,6 +103,6 @@ footer {
 }
 
 .fondogris {
-    background-color: #6d6d6d;
-    color: white;
+    background-color: #cecece;
+    color: black;
 }

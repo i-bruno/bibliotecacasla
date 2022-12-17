@@ -117,12 +117,16 @@ main .redes {
   height: auto;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  display: inline-block;
   background-color: white;
   border-radius: 0.5rem;
   border-width: 2px;
   border-style: solid;
-  border-color: #263d54; }
+  border-color: #263d54;
+  display: inline-block; }
+  .post .texto {
+    width: auto;
+    height: 150px;
+    overflow: hidden; }
 
 /*Proyectos - Catálogo*/
 @media only screen and (min-width: 1200px) {
@@ -205,43 +209,23 @@ main .redes {
 /*Contacto*/
 .mcontacto {
   position: relative; }
-
-/* Formulario de contacto */
-form {
-  padding: 5px 5px 5px 5px;
-  margin: 5px 5px 5px 5px; }
-
-label {
-  font-family: "Nunito", sans-serif;
-  padding: 5px;
-  margin: 5px 5px 5px 5px; }
-
-textarea {
-  width: 95%;
-  margin: 0px 0px 0px 10px; }
-
-legend {
-  font-family: "Nunito", sans-serif; }
+  .mcontacto form {
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px; }
+    .mcontacto form label {
+      font-family: "Nunito", sans-serif;
+      padding: 5px;
+      margin: 5px 5px 5px 5px; }
+    .mcontacto form textarea {
+      width: 95%;
+      margin: 0px 0px 0px 10px; }
+    .mcontacto form legend {
+      font-family: "Nunito", sans-serif; }
 
 img {
   width: auto;
   height: 200px; }
 
-.form {
-  width: 40%;
-  height: auto;
-  display: inline-block;
-  padding: 5px 5px 5px 5px;
-  margin: 5px 5px 5px 5px;
-  background-color: #ffffff;
-  border-style: solid;
-  border-radius: 10px;
-  border-color: #263d54; }
-  .form input {
-    padding: 5px;
-    margin: 5px 5px 5px 5px; }
-
-/* Fin formulario de contacto */
 /*Datos de Contacto - Aside*/
 .tel {
   width: auto;
@@ -317,6 +301,20 @@ footer {
   background-color: #bf1b27;
   /* Color de fondo del footer */ }
 
+.navrojo:hover {
+  font-weight: bold; }
+  .navrojo:hover a {
+    color: #bf1b27; }
+  .navrojo:hover a:active {
+    background-color: white; }
+
+.navazul:hover {
+  font-weight: bold; }
+  .navazul:hover a {
+    color: #263d54; }
+  .navazul:hover a:active {
+    background-color: white; }
+
 /*Clases para bootstrap*/
 .fondoazul {
   background-color: #263d54;
@@ -331,5 +329,5 @@ footer {
   color: #000000; }
 
 .fondogris {
-  background-color: #6d6d6d;
-  color: white; }
+  background-color: #cecece;
+  color: black; }
