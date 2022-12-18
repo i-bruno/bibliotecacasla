@@ -47,13 +47,24 @@ main {
     }
 }
 
-.finicio{
-    margin: 225px 0 0 0;
+.minicio{
+    @include tamanio(auto, 500px);
 }
 
 @media only screen and (min-width:576px){
-.finicio{
-    margin: 100px 0 0 0;
-}
+    .minicio{
+        @include tamanio(auto, 600px);
     }
+}
 
+@media only screen and (min-width:992px){
+    .minicio{
+        @include tamanio(auto, 500px);
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .minicio{
+        @include tamanio(auto, 539px);
+    }
+}

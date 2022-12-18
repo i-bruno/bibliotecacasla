@@ -29,12 +29,24 @@ main .redes {
     padding: 5px;
     margin: 5px 5px 5px 5px; }
 
-.finicio {
-  margin: 225px 0 0 0; }
+.minicio {
+  width: auto;
+  height: 500px; }
 
 @media only screen and (min-width: 576px) {
-  .finicio {
-    margin: 100px 0 0 0; } }
+  .minicio {
+    width: auto;
+    height: 600px; } }
+
+@media only screen and (min-width: 992px) {
+  .minicio {
+    width: auto;
+    height: 500px; } }
+
+@media only screen and (min-width: 1200px) {
+  .minicio {
+    width: auto;
+    height: 539px; } }
 
 /*Sobre*/
 .sobre {
